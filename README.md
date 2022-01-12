@@ -6,6 +6,7 @@ https://mvnrepository.com/artifact/org.jsoup/jsoup/1.14.3<br><br>
 
 <b>Java</b>
 ```
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -16,15 +17,14 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.connect("https://hokej.cz/tipsport-extraliga/stats-center?season=2021&competition=6705&stranger=0&stats-all=1&stats-order=ga&stats-direction=desc").get();
-        System.out.println(doc.title());
+        System.out.println(doc.title()); //Title printout
 
-        Elements newsHeadlines = doc.select("td");
+        Elements newsHeadlines = doc.select("body > div.branding-wrapper > div.content-wrapper > div > div.container > table > tbody > tr > td > a"); //Prvek - Element, class name
         for (Element headline : newsHeadlines) {
-            System.out.println(headline.text());
+            System.out.println(headline.text()); //Element printout
         }
     }
 }
-
 
 ```
 <b>Maven</b>
@@ -55,3 +55,5 @@ public class Main {
 
 </project>
 ```
+![image](https://user-images.githubusercontent.com/90755554/149084552-7380c765-fb19-4701-9918-610c390da57a.png)
+
