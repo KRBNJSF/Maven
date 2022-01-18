@@ -67,3 +67,9 @@ public class Main {
     <modelVersion>4.0.0</modelVersion>
 ```
 
+<b>Instalace nových dependencies: <\b>
+    alt+ins
+    ![image](https://user-images.githubusercontent.com/90755554/149888532-93f5182c-3b88-4997-af74-4f7f3345aebd.png)
+    ![image](https://user-images.githubusercontent.com/90755554/149888600-89d91bcd-e9a0-4fa9-9a12-49f1bc46831a.png)
+    ![image](https://user-images.githubusercontent.com/90755554/149888739-717bd736-ed9c-4040-9d41-18a32e2ef766.png)
+
